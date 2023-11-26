@@ -43,24 +43,22 @@ image_1 = canvas.create_image(
     image=image_image_1
 )
 
-entry_image_1 = PhotoImage(
-    file=relative_to_assets("entry_1.png"))
-entry_bg_1 = canvas.create_image(
-    180.0,
-    216.0,
-    image=entry_image_1
+canvas.create_text(
+    92.0,
+    168.0,
+    anchor="nw",
+    text="Pyquizz",
+    fill="#FFFFFF",
+    font=("RubikBubbles Regular", 40 * -1)
 )
-entry_1 = Text(
-    bd=0,
-    bg="#FFFFFF",
-    fg="#000716",
-    highlightthickness=0
-)
-entry_1.place(
-    x=0.0,
-    y=155.0,
-    width=360.0,
-    height=120.0
+
+canvas.create_text(
+    33.0,
+    225.0,
+    anchor="nw",
+    text=""Learning Python programs becomes\n                    more exciting and fun”",
+    fill="#FFF8F8",
+    font=("RubikBubbles Regular", 15 * -1)
 )
 
 button_image_1 = PhotoImage(

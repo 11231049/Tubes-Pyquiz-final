@@ -63,24 +63,22 @@ entry_1.place(
     height=46.0
 )
 
-entry_image_2 = PhotoImage(
-    file=relative_to_assets("entry_2.png"))
-entry_bg_2 = canvas.create_image(
-    184.0,
-    206.0,
-    image=entry_image_2
+canvas.create_text(
+    95.51629638671875,
+    154.0,
+    anchor="nw",
+    text="Pyquizz",
+    fill="#FFFFFF",
+    font=("RubikBubbles Regular", 40 * -1)
 )
-entry_2 = Text(
-    bd=0,
-    bg="#FFFFFF",
-    fg="#000716",
-    highlightthickness=0
-)
-entry_2.place(
-    x=0.0,
-    y=125.0,
-    width=368.0,
-    height=160.0
+
+canvas.create_text(
+    41.22283935546875,
+    251.0,
+    anchor="nw",
+    text="Username",
+    fill="#FFFFFF",
+    font=("GermaniaOne Regular", 24 * -1)
 )
 
 button_image_1 = PhotoImage(
