@@ -5,13 +5,13 @@
 
 from pathlib import Path
 
-from tkinter import *
+# from tkinter import *
 # Explicit imports to satisfy Flake8
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / \
-    Path(r"./assets/frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -21,53 +21,26 @@ def relative_to_assets(path: str) -> Path:
 window = Tk()
 
 window.geometry("360x800")
-window.configure(bg="#FFFFFF")
+window.configure(bg = "#FFFFFF")
 
 
 canvas = Canvas(
     window,
-    bg="#FFFFFF",
-    height=800,
-    width=360,
-    bd=0,
-    highlightthickness=0,
-    relief="ridge"
+    bg = "#FFFFFF",
+    height = 800,
+    width = 360,
+    bd = 0,
+    highlightthickness = 0,
+    relief = "ridge"
 )
 
-canvas.place(x=0, y=0)
+canvas.place(x = 0, y = 0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
     95.0,
     43.0,
     image=image_image_1
-)
-
-canvas.create_text(
-    11.0,
-    212.0,
-    anchor="nw",
-    text=" Apa  itu  OOP  Pada  Python ?",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 20 * -1)
-)
-
-canvas.create_text(
-    11.0,
-    95.0,
-    anchor="nw",
-    text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 15 * -1)
-)
-
-canvas.create_text(
-    43.0,
-    260.0,
-    anchor="nw",
-    text="A.  Object  Optical  Project\n\nB.  Object  Oriented  Programming\n\nC.  Object  Optical  Programming",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
 )
 
 entry_image_1 = PhotoImage(
@@ -90,13 +63,24 @@ entry_1.place(
     height=46.0
 )
 
-canvas.create_text(
-    37.0,
-    400.0,
-    anchor="nw",
-    text="Opsi Jawaban",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+entry_image_2 = PhotoImage(
+    file=relative_to_assets("entry_2.png"))
+entry_bg_2 = canvas.create_image(
+    179.5,
+    255.5,
+    image=entry_image_2
+)
+entry_2 = Text(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_2.place(
+    x=0.0,
+    y=83.0,
+    width=359.0,
+    height=343.0
 )
 
 button_image_1 = PhotoImage(
