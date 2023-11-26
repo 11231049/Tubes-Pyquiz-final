@@ -5,13 +5,13 @@
 
 from pathlib import Path
 
-# from tkinter import *
+from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame0")
+ASSETS_PATH = OUTPUT_PATH / \
+    Path(r"./assets/frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -21,20 +21,20 @@ def relative_to_assets(path: str) -> Path:
 window = Tk()
 
 window.geometry("360x800")
-window.configure(bg = "#FFFFFF")
+window.configure(bg="#FFFFFF")
 
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
-    height = 800,
-    width = 360,
-    bd = 0,
-    highlightthickness = 0,
-    relief = "ridge"
+    bg="#FFFFFF",
+    height=800,
+    width=360,
+    bd=0,
+    highlightthickness=0,
+    relief="ridge"
 )
 
-canvas.place(x = 0, y = 0)
+canvas.place(x=0, y=0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
