@@ -17,7 +17,6 @@ ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame2")
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
-
 window = Tk()
 
 window.geometry("360x800")
@@ -67,15 +66,17 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_1 clicked"),
+    command= lambda: print("button_1 clicked"), 
     relief="flat"
 )
+
 button_1.place(
     x=119.0,
     y=334.0,
     width=128.0,
     height=131.0
 )
+button_1.pack()
 
 button_image_2 = PhotoImage(
     file=relative_to_assets("button_2.png"))
