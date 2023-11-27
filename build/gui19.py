@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame19")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame19")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -56,17 +56,17 @@ canvas.create_text(
     91.0,
     anchor="nw",
     text="Pembahasan",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 20 * -1)
 )
 
 canvas.create_text(
-    45.0,
+    25.0,
     175.0,
     anchor="nw",
-    text="A. mencetak pisang 5 kali\n\nKarena di dalam perulangan while, selama count < 6, maka program akan mengoperasikan nilai count ke dalam counter = counter + 1 di mana program akan mencetak “pisang”.\n\n6 lebih besar dari 5 dan tidak memenuhi syarat perulangan while. Maka, perulangan berhenti di 5 dan program mencetak pisang sebanyak 5 kali sebagai hasil perulangan.\n",
+    text="A. mencetak pisang 5 kali\n\nKarena di dalam perulangan while, selama count < 6, \nmaka program \nakan mengoperasikan nilai count ke dalam counter = \ncounter + 1 \ndi mana program akan mencetak “pisang”.\n\n6 lebih besar dari 5 dan tidak memenuhi syarat \nperulangan while. Maka, \nperulangan berhenti di 5 dan program \nmencetak pisang sebanyak 5 kali sebagai hasil perulangan.\n",
     fill="#000000",
-    font=("GermaniaOne Regular", 20 * -1)
+    font=("GermaniaOne Regular", 12 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -82,7 +82,7 @@ button_1.place(
     x=101.0,
     y=675.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 window.resizable(False, False)
 window.mainloop()

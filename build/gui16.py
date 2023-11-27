@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame16")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame16")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -56,8 +56,8 @@ canvas.create_text(
     91.0,
     anchor="nw",
     text="Pembahasan",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 20 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -73,14 +73,14 @@ button_1.place(
     x=101.0,
     y=675.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 
 canvas.create_text(
-    54.0,
+    25.0,
     215.0,
     anchor="nw",
-    text="B. Object-oriented programming\n\nObject-oriented Programming atau OOP pada Python merupakan paradigma pemrograman yang berfokus pada objek dan hubungan antara objek-objek tersebut.",
+    text="B. Object-oriented programming\n\nObject-oriented Programming \natau OOP pada Python merupakan \nparadigma pemrograman \nyang berfokus pada objek dan \nhubungan antara objek-objek tersebut.",
     fill="#000000",
     font=("GermaniaOne Regular", 20 * -1)
 )

@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame13")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame13")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -44,12 +44,12 @@ image_1 = canvas.create_image(
 )
 
 canvas.create_text(
-    106.0,
+    100.0,
     86.0,
     anchor="nw",
     text="Evaluasi Quiz",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 32 * -1)
+    fill="#252525",
+    font=("Grobold", 24 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -62,7 +62,7 @@ button_1 = Button(
     relief="flat"
 )
 button_1.place(
-    x=106.0,
+    x=70.0,
     y=477.0,
     width=202.0,
     height=40.0
@@ -78,10 +78,10 @@ button_2 = Button(
     relief="flat"
 )
 button_2.place(
-    x=106.0,
+    x=50.0,
     y=532.0,
     width=243.0,
-    height=41.0
+    height=46.0
 )
 
 entry_image_1 = PhotoImage(
@@ -95,22 +95,23 @@ entry_1 = Text(
     bd=0,
     bg="#FFF9F9",
     fg="#000716",
+    font=("Grobold", 16 * -1),
     highlightthickness=0
 )
 entry_1.place(
-    x=146.0,
+    x=20.0,
     y=237.0,
     width=63.0,
     height=161.0
 )
 
 canvas.create_text(
-    52.0,
+    20.0,
     129.0,
     anchor="nw",
-    text="        Maaf (Username) !\n kamu belum kompeten dalam \nQuiz Algoritma Pemograman :(\n",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    text="         Maaf (Username) !\nkamu belum kompeten dalam \nQuiz Algoritma Pemograman :(\n",
+    fill="#E52A2A",
+    font=("Grobold", 22 * -1)
 )
 
 canvas.create_text(
@@ -119,7 +120,7 @@ canvas.create_text(
     anchor="nw",
     text="  ",
     fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    font=("Grobold", 24 * -1)
 )
 window.resizable(False, False)
 window.mainloop()

@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame18")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame18")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -56,17 +56,17 @@ canvas.create_text(
     91.0,
     anchor="nw",
     text="Pembahasan",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 20 * -1)
 )
 
 canvas.create_text(
-    45.0,
+    25.0,
     200.0,
     anchor="nw",
-    text="A. mencetak angka 1-5\n\nKarena di dalam perulangan while, selama counter <= 5, maka program akan mengoperasikan nilai counter ke dalam counter = counter + 1 di mana nilai counter adalah 1.\ncounter = 1 -> 1\ncounter = 1 -> 1 + 1 = 2\ncounter = 2 -> 1 + 2 = 3\ncounter = 3 -> 1 + 3 = 4\ncounter = 4 -> 1 + 4 = 5\ncounter = 5 -> 1 + 5 = 6\n\n6 lebih besar dari 5 dan tidak memenuhi syarat perulangan while. Maka, perulangan berhenti di 5 dan program mencetak 1-5 sebagai hasil perulangan.\n",
-    fill="#000000",
-    font=("GermaniaOne Regular", 20 * -1)
+    text="A. mencetak angka 1-5\n\nKarena di dalam perulangan while, selama \ncounter <= 5, maka program akan mengoperasikan \nnilai counter ke dalam counter = counter + 1 di mana nilai counter adalah 1.\ncounter = 1 -> 1\ncounter = 1 -> 1 + 1 = 2\ncounter = 2 -> 1 + 2 = 3\ncounter = 3 -> 1 + 3 = 4\ncounter = 4 -> 1 + 4 = 5\ncounter = 5 -> 1 + 5 = 6\n\n6 lebih besar dari 5 dan tidak memenuhi syarat \nperulangan while. Maka, perulangan berhenti \ndi 5 dan program mencetak 1-5 sebagai hasil perulangan.\n",
+    fill="#252525",
+    font=("GermaniaOne Regular", 14 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -82,7 +82,7 @@ button_1.place(
     x=101.0,
     y=675.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 window.resizable(False, False)
 window.mainloop()

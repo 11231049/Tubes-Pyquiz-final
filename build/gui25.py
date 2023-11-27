@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame25")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame25")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -56,17 +56,17 @@ canvas.create_text(
     91.0,
     anchor="nw",
     text="Pembahasan",
-    fill="#FFFFFF",
+    fill="#252525",
     font=("GermaniaOne Regular", 24 * -1)
 )
 
 canvas.create_text(
-    45.0,
+    25.0,
     175.0,
     anchor="nw",
-    text="C.Sebuah blok kode yang dapat dipanggil dengan sebuah nama\n\nFungsi pada python dapat digunakan berulang, cukup sekali mendefinisikan fungsi dan ditempat lain pun bisa menggunakannya selama dalam satu program.",
+    text="C.Sebuah blok kode yang dapat dipanggil \ndengan sebuah nama\n\nFungsi pada python dapat digunakan\nberulang, cukup sekali mendefinisikan \nfungsi dan ditempat lain pun bisa menggunakannya \nselama dalam satu program.",
     fill="#000000",
-    font=("GermaniaOne Regular", 20 * -1)
+    font=("GermaniaOne Regular", 14 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -82,7 +82,7 @@ button_1.place(
     x=101.0,
     y=675.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 window.resizable(False, False)
 window.mainloop()

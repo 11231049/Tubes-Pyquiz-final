@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -54,13 +54,14 @@ entry_1 = Entry(
     bd=0,
     bg="#FFF9F9",
     fg="#000716",
+    font=("Grobold", 18),
     highlightthickness=0
 )
 entry_1.place(
     x=61.0,
-    y=436.0,
+    y=437.0,
     width=237.0,
-    height=46.0
+    height=40.0
 )
 
 canvas.create_text(
@@ -68,8 +69,8 @@ canvas.create_text(
     212.0,
     anchor="nw",
     text=" Apa  itu  OOP  Pada  Python ?",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 20 * -1)
+    fill="#252525",
+    font=("Grobold", 20 * -1)
 )
 
 canvas.create_text(
@@ -77,8 +78,8 @@ canvas.create_text(
     95.0,
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 15 * -1)
+    fill="#252525",
+    font=("Grobold", 15 * -1)
 )
 
 canvas.create_text(
@@ -86,8 +87,8 @@ canvas.create_text(
     260.0,
     anchor="nw",
     text="A.  Object  Optical  Project\n\nB.  Object  Oriented  Programming\n\nC.  Object  Optical  Programming",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
+    fill="#252525",
+    font=("Grobold", 16 * -1)
 )
 
 canvas.create_text(
@@ -95,8 +96,8 @@ canvas.create_text(
     400.0,
     anchor="nw",
     text="Opsi Jawaban",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 24 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -110,9 +111,9 @@ button_1 = Button(
 )
 button_1.place(
     x=101.0,
-    y=529.0,
-    width=169.0,
-    height=37.0
+    y=535.0,
+    width=170.0,
+    height=45.0
 )
 window.resizable(False, False)
 window.mainloop()

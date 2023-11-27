@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame17")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame17")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -56,8 +56,8 @@ canvas.create_text(
     91.0,
     anchor="nw",
     text="Pembahasan",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 20 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -73,16 +73,16 @@ button_1.place(
     x=101.0,
     y=675.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 
 canvas.create_text(
-    54.0,
+    25.0,
     195.0,
     anchor="nw",
-    text="B. Nenek\n\nvariabel ‘pelaku’ menyimpan angka 63.\n63 memenuhi pernyataan pertama yaitu >= 60 dan <= 73,\njadi program mencetak “nenek” sebagai pelakunya.\n\n63 tidak memenuhi pernyataan kedua karena 63 tidak sama dengan 73, jadi program tidak mencetak “kakek”.\n\nprogram juga tidak mencetak “tidak ada pelaku” karena sudah memenuhi pernyataan pertama.",
+    text= "B. Nenek\n\nvariabel ‘pelaku’ menyimpan angka 63.\n63 memenuhi pernyataan \npertama yaitu \n>= 60 dan <= 73,jadi \nprogram mencetak “nenek” \nsebagai pelakunya.\n63 tidak memenuhi pernyataan \nkedua karena 63 tidak sama dengan 73, jadi \nprogram tidak mencetak “kakek”.\nprogram juga tidak mencetak “tidak ada pelaku” \nkarena sudah memenuhi pernyataan pertama.",
     fill="#000000",
-    font=("GermaniaOne Regular", 20 * -1)
+    font=("GermaniaOne Regular", 16 * -1)
 )
 window.resizable(False, False)
 window.mainloop()

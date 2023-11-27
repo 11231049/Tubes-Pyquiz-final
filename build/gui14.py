@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame14")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame14")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -44,21 +44,21 @@ image_1 = canvas.create_image(
 )
 
 canvas.create_text(
-    72.0,
+    90.0,
     154.0,
     anchor="nw",
     text="Jawaban  Benar!",
-    fill="#FFFFFF",
-    font=("RubikBubbles Regular", 24 * -1)
+    fill="#2AE531",
+    font=("Grobold", 20 * -1)
 )
 
 canvas.create_text(
-    18.0,
+    25.0,
     193.0,
     anchor="nw",
-    text=""Yuk  masuk  ke  halaman  penjelasan  !"",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
+    text="Yuk  masuk  ke  halaman  penjelasan  !",
+    fill="#252525",
+    font=("Grobold", 16 * -1)
 )
 
 canvas.create_rectangle(
@@ -82,7 +82,7 @@ button_1.place(
     x=95.0,
     y=482.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 window.resizable(False, False)
 window.mainloop()

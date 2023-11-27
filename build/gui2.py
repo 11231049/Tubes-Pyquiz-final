@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame2")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame2")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -38,8 +38,8 @@ canvas.place(x = 0, y = 0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
-    1182.0,
-    892.0,
+    95.0,
+    43.0,
     image=image_image_1
 )
 
@@ -48,17 +48,17 @@ canvas.create_text(
     168.0,
     anchor="nw",
     text="Pyquizz",
-    fill="#FFFFFF",
-    font=("RubikBubbles Regular", 40 * -1)
+    fill="#2AE531",
+    font=("Grobold", 40 * -1)
 )
 
 canvas.create_text(
     33.0,
     225.0,
     anchor="nw",
-    text=""Learning Python programs becomes\n                    more exciting and fun”",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 15 * -1)
+    text="   Learning Python programs becomes\n              more exciting and fun",
+    fill="#252525",
+    font=("Grobold", 15 * -1)
 )
 
 button_image_1 = PhotoImage(

@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame8")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame8")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -49,7 +49,7 @@ canvas.create_text(
     anchor="nw",
     text=" Bagaimana cara menginisialisasi\n         sebuah list kosong dalam Python?",
     fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
+    font=("Grobold", 16 * -1)
 )
 
 canvas.create_text(
@@ -58,7 +58,7 @@ canvas.create_text(
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
     fill="#FFF8F8",
-    font=("RubikBubbles Regular", 15 * -1)
+    font=("Grobold", 15 * -1)
 )
 
 canvas.create_text(
@@ -67,7 +67,7 @@ canvas.create_text(
     anchor="nw",
     text="A.   list()\n\nB.   {}\n\nC.   empty_list()",
     fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
+    font=("Grobold", 16 * -1)
 )
 
 entry_image_1 = PhotoImage(
@@ -81,13 +81,14 @@ entry_1 = Entry(
     bd=0,
     bg="#FFF9F9",
     fg="#000716",
+    font=("Grobold", 14),
     highlightthickness=0
 )
 entry_1.place(
     x=57.0,
-    y=450.0,
+    y=455.0,
     width=237.0,
-    height=46.0
+    height=35.0
 )
 
 canvas.create_text(
@@ -96,7 +97,7 @@ canvas.create_text(
     anchor="nw",
     text="Opsi Jawaban",
     fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    font=("Grobold", 24 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -112,23 +113,8 @@ button_1.place(
     x=97.0,
     y=543.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 
-button_image_2 = PhotoImage(
-    file=relative_to_assets("button_2.png"))
-button_2 = Button(
-    image=button_image_2,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
-    relief="flat"
-)
-button_2.place(
-    x=290.0,
-    y=23.0,
-    width=42.0,
-    height=41.0
-)
 window.resizable(False, False)
 window.mainloop()

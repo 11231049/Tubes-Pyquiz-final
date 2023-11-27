@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame23")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame23")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -56,17 +56,17 @@ canvas.create_text(
     91.0,
     anchor="nw",
     text="Pembahasan",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 20 * -1)
 )
 
 canvas.create_text(
-    45.0,
+    25.0,
     175.0,
     anchor="nw",
-    text="C. menampilkan output ke layar\n\nperintah print () digunakan untuk mencetak output pada program",
+    text="C. menampilkan output ke layar\n\n perintah print () digunakan untuk\n mencetak output pada program",
     fill="#000000",
-    font=("GermaniaOne Regular", 20 * -1)
+    font=("GermaniaOne Regular", 18 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -82,7 +82,7 @@ button_1.place(
     x=101.0,
     y=675.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 window.resizable(False, False)
 window.mainloop()

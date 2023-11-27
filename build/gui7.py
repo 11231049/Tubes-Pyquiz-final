@@ -7,11 +7,11 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from tkinter import Tk, Canvas, Text, Button, PhotoImage, Entry
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame7")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame7")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -49,7 +49,7 @@ canvas.create_text(
     anchor="nw",
     text=" counter =1\n         while counter  <=  5:\n              print (counter)\n              counter += 1  \n",
     fill="#FFF8F8",
-    font=("RubikBubbles Regular", 20 * -1)
+    font=("Grobold", 20 * -1)
 )
 
 canvas.create_text(
@@ -58,7 +58,7 @@ canvas.create_text(
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
     fill="#FFF8F8",
-    font=("RubikBubbles Regular", 15 * -1)
+    font=("Grobold", 15 * -1)
 )
 
 canvas.create_text(
@@ -67,7 +67,7 @@ canvas.create_text(
     anchor="nw",
     text="A.   Mencetak  angka  1-5\n\nB.   Mencetak  counter\n\nC.   Mencetak  angka  0-5",
     fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
+    font=("Grobold", 16 * -1)
 )
 
 entry_image_1 = PhotoImage(
@@ -77,17 +77,18 @@ entry_bg_1 = canvas.create_image(
     556.0,
     image=entry_image_1
 )
-entry_1 = None(
+entry_1 = Entry(
     bd=0,
     bg="#FFF9F9",
     fg="#000716",
+    font=("Grobold", 14),
     highlightthickness=0
 )
 entry_1.place(
     x=66.0,
-    y=532.0,
-    width=237.0,
-    height=46.0
+    y=545.0,
+    width=240.0,
+    height=20.0
 )
 
 canvas.create_text(
@@ -95,8 +96,8 @@ canvas.create_text(
     496.0,
     anchor="nw",
     text="Opsi Jawaban",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 24 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -112,23 +113,8 @@ button_1.place(
     x=106.0,
     y=625.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 
-button_image_2 = PhotoImage(
-    file=relative_to_assets("button_2.png"))
-button_2 = Button(
-    image=button_image_2,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
-    relief="flat"
-)
-button_2.place(
-    x=290.0,
-    y=23.0,
-    width=42.0,
-    height=41.0
-)
 window.resizable(False, False)
 window.mainloop()

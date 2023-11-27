@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame21")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame21")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -56,17 +56,17 @@ canvas.create_text(
     91.0,
     anchor="nw",
     text="Pembahasan",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("GermaniaOne Regular", 20 * -1)
 )
 
 canvas.create_text(
     45.0,
     175.0,
     anchor="nw",
-    text="B. Terintepretasi\n\nPython adalah bahasa pemrograman tingkat tinggi yang bersifat interpretatif. Ini berarti kode Python tidak perlu dikompilasi menjadi bahasa mesin sebelum dijalankan; sebaliknya, interpreter Python dapat langsung mengeksekusi kode sumber Python.\n",
+    text="B. Terintepretasi\n\nPython adalah bahasa pemrograman tingkat tinggi \nyang bersifat interpretatif. Ini berarti kode Python \ntidak perlu dikompilasi menjadi \nbahasa mesin sebelum dijalankan; \nsebaliknya, interpreter Python dapat langsung \nmengeksekusi kode sumber Python.\n",
     fill="#000000",
-    font=("GermaniaOne Regular", 20 * -1)
+    font=("GermaniaOne Regular", 12 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -82,7 +82,7 @@ button_1.place(
     x=101.0,
     y=675.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 window.resizable(False, False)
 window.mainloop()

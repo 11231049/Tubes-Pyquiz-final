@@ -11,12 +11,11 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame1")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame1")
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
-
 
 window = Tk()
 
@@ -26,7 +25,6 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
     height = 800,
     width = 360,
     bd = 0,
@@ -54,12 +52,13 @@ entry_1 = Entry(
     bd=0,
     bg="#FFF9F9",
     fg="#000716",
+    font=("Grobold", 14),
     highlightthickness=0
 )
 entry_1.place(
     x=65.0,
-    y=287.0,
-    width=237.0,
+    y=295.0,
+    width=250.0,
     height=46.0
 )
 
@@ -68,8 +67,8 @@ canvas.create_text(
     154.0,
     anchor="nw",
     text="Pyquizz",
-    fill="#FFFFFF",
-    font=("RubikBubbles Regular", 40 * -1)
+    fill="#5BE52A",
+    font=("Grobold", 40 * -1)
 )
 
 canvas.create_text(
@@ -77,8 +76,8 @@ canvas.create_text(
     251.0,
     anchor="nw",
     text="Username",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 24 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -94,7 +93,7 @@ button_1.place(
     x=296.0,
     y=23.0,
     width=42.0,
-    height=41.0
+    height=41.0,
 )
 
 button_image_2 = PhotoImage(
@@ -108,9 +107,9 @@ button_2 = Button(
 )
 button_2.place(
     x=103.0,
-    y=382.0,
+    y=367.0,
     width=169.0,
-    height=37.0
+    height=45.0,
 )
 window.resizable(False, False)
 window.mainloop()

@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/hanshi/Tkinter-Designer/tkdesigner/build/assets/frame3")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame3")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -47,9 +47,9 @@ canvas.create_text(
     11.0,
     212.0,
     anchor="nw",
-    text="pelaku = 63\n        if  pelaku  >= 60  and  pelaku  <=  73:\n              print (“nenek”)\n        elif  pelaku  >= 60  and  pelaku  ==  73:\n              print (“kakek”)\n        else :\n               print(“tidak ada pelaku”)",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
+    text="pelaku = 63\n        if  pelaku  >= 60  and  pelaku  <=  73:\n              print (“nenek”)\n        elif  pelaku  >= 60  and  pelaku  == 73:\n              print (“kakek”)\n        else :\n               print(“tidak ada pelaku”)",
+    fill="#252525",
+    font=("Grobold", 16 * -1)
 )
 
 canvas.create_text(
@@ -57,8 +57,8 @@ canvas.create_text(
     95.0,
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 15 * -1)
+    fill="#252525",
+    font=("Grobold", 15 * -1)
 )
 
 canvas.create_text(
@@ -66,8 +66,8 @@ canvas.create_text(
     385.0,
     anchor="nw",
     text="A.   kakek\n\nB.   nenek\n\nC.  Tidak  ada  pelaku",
-    fill="#FFF8F8",
-    font=("RubikBubbles Regular", 16 * -1)
+    fill="#252525",
+    font=("Grobold", 16 * -1)
 )
 
 entry_image_1 = PhotoImage(
@@ -81,13 +81,14 @@ entry_1 = Entry(
     bd=0,
     bg="#FFF9F9",
     fg="#000716",
+    font=("Grobold", 18),
     highlightthickness=0
 )
 entry_1.place(
     x=66.0,
-    y=561.0,
+    y=570.0,
     width=237.0,
-    height=46.0
+    height=30.0
 )
 
 canvas.create_text(
@@ -95,8 +96,8 @@ canvas.create_text(
     525.0,
     anchor="nw",
     text="Opsi Jawaban",
-    fill="#FFFFFF",
-    font=("GermaniaOne Regular", 24 * -1)
+    fill="#252525",
+    font=("Grobold", 24 * -1)
 )
 
 button_image_1 = PhotoImage(
@@ -112,23 +113,8 @@ button_1.place(
     x=106.0,
     y=654.0,
     width=169.0,
-    height=37.0
+    height=46.0
 )
 
-button_image_2 = PhotoImage(
-    file=relative_to_assets("button_2.png"))
-button_2 = Button(
-    image=button_image_2,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
-    relief="flat"
-)
-button_2.place(
-    x=290.0,
-    y=23.0,
-    width=42.0,
-    height=41.0
-)
 window.resizable(False, False)
 window.mainloop()
