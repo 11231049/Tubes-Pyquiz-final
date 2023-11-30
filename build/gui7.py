@@ -26,7 +26,7 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
+    bg = "#252525",
     height = 800,
     width = 360,
     bd = 0,
@@ -48,7 +48,7 @@ canvas.create_text(
     212.0,
     anchor="nw",
     text=" counter =1\n         while counter  <=  5:\n              print (counter)\n              counter += 1  \n",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 20 * -1)
 )
 
@@ -57,7 +57,7 @@ canvas.create_text(
     95.0,
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 15 * -1)
 )
 
@@ -66,7 +66,7 @@ canvas.create_text(
     337.0,
     anchor="nw",
     text="A.   Mencetak  angka  1-5\n\nB.   Mencetak  counter\n\nC.   Mencetak  angka  0-5",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 16 * -1)
 )
 
@@ -96,7 +96,7 @@ canvas.create_text(
     496.0,
     anchor="nw",
     text="Opsi Jawaban",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 24 * -1)
 )
 

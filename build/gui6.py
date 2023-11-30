@@ -26,7 +26,7 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
+    bg = "#252525",
     height = 800,
     width = 360,
     bd = 0,
@@ -48,7 +48,7 @@ canvas.create_text(
     212.0,
     anchor="nw",
     text=" Bagaimana  cara  mengawali  \n         komentar  pada  pyhton?",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 20 * -1)
 )
 
@@ -57,7 +57,7 @@ canvas.create_text(
     95.0,
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 15 * -1)
 )
 
@@ -66,7 +66,7 @@ canvas.create_text(
     305.0,
     anchor="nw",
     text="A.   Tagar  ‘#’\n\nB.   Kurung  ()\n\nC.  Kurawal  {}",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 16 * -1)
 )
 

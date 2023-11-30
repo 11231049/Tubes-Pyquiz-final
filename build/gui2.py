@@ -25,7 +25,7 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
+    bg = "#252525",
     height = 800,
     width = 360,
     bd = 0,
@@ -34,6 +34,7 @@ canvas = Canvas(
 )
 
 canvas.place(x = 0, y = 0)
+
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
@@ -56,7 +57,7 @@ canvas.create_text(
     225.0,
     anchor="nw",
     text="   Learning Python programs becomes\n              more exciting and fun",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 15 * -1)
 )
 
@@ -72,11 +73,10 @@ button_1 = Button(
 
 button_1.place(
     x=119.0,
-    y=334.0,
+    y=400.0,
     width=128.0,
     height=131.0
 )
-button_1.pack()
 
 button_image_2 = PhotoImage(
     file=relative_to_assets("button_2.png"))

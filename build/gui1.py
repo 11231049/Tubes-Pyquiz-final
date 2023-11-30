@@ -27,6 +27,7 @@ canvas = Canvas(
     window,
     height = 800,
     width = 360,
+    bg = "#252525",
     bd = 0,
     highlightthickness = 0,
     relief = "ridge"
@@ -57,9 +58,9 @@ entry_1 = Entry(
 )
 entry_1.place(
     x=65.0,
-    y=295.0,
+    y=290.0,
     width=250.0,
-    height=46.0
+    height=40.0
 )
 
 canvas.create_text(
@@ -76,7 +77,7 @@ canvas.create_text(
     251.0,
     anchor="nw",
     text="Username",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 24 * -1)
 )
 

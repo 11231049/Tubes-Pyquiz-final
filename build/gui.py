@@ -26,7 +26,7 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
+    bg = "#252525",
     height = 800,
     width = 360,
     bd = 0,
@@ -68,8 +68,8 @@ canvas.create_text(
     11.0,
     212.0,
     anchor="nw",
-    text=" Apa  itu  OOP  Pada  Python ?",
-    fill="#252525",
+    text="1. Apa  itu  OOP  Pada  Python ?",
+    fill="#FFFFFF",
     font=("Grobold", 20 * -1)
 )
 
@@ -78,7 +78,7 @@ canvas.create_text(
     95.0,
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 15 * -1)
 )
 
@@ -87,7 +87,7 @@ canvas.create_text(
     260.0,
     anchor="nw",
     text="A.  Object  Optical  Project\n\nB.  Object  Oriented  Programming\n\nC.  Object  Optical  Programming",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 16 * -1)
 )
 
@@ -96,7 +96,7 @@ canvas.create_text(
     400.0,
     anchor="nw",
     text="Opsi Jawaban",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 24 * -1)
 )
 

@@ -57,7 +57,7 @@ canvas.create_text(
     anchor="nw",
     text="Pembahasan",
     fill="#252525",
-    font=("GermaniaOne Regular", 24 * -1)
+    font=("Grobold", 20 * -1)
 )
 
 canvas.create_text(

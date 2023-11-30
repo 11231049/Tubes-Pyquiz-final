@@ -26,7 +26,7 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
+    bg = "#252525",
     height = 800,
     width = 360,
     bd = 0,
@@ -48,7 +48,7 @@ canvas.create_text(
     86.0,
     anchor="nw",
     text="Evaluasi Quiz",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 22 * -1)
 )
 
@@ -95,14 +95,14 @@ entry_1 = Text(
     bd=0,
     bg="#FFF9F9",
     fg="#000716",
-    
+    font=("Grobold", 50 * -1), 
     highlightthickness=0
 )
 entry_1.place(
-    x=130.0,
-    y=237.0,
-    width=63.0,
-    height=161.0
+    x=135,
+    y=280,
+    width=100,
+    height=100
 )
 
 canvas.create_text(
@@ -119,7 +119,7 @@ canvas.create_text(
     137.0,
     anchor="nw",
     text="  ",
-    fill="#FFFFFF",
+    fill="#252525",
     font=("Grobold", 24 * -1)
 )
 window.resizable(False, False)

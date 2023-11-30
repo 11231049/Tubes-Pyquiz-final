@@ -26,7 +26,7 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
+    bg = "#252525",
     height = 800,
     width = 360,
     bd = 0,
@@ -57,7 +57,7 @@ canvas.create_text(
     95.0,
     anchor="nw",
     text="Jawab  quiz  berikut  dengan  mengisi  kolom  \njawaban  sesuai  opsi  yang  dipilih  (A,B,C)",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 15 * -1)
 )
 
@@ -66,7 +66,7 @@ canvas.create_text(
     336.0,
     anchor="nw",
     text="A.   Mencetak pisang  5  kali\n\nB.   Mencetak  pisang  4  kali\n\nC.   Mencetak  angka  0-5",
-    fill="#FFF8F8",
+    fill="#FFFFFF",
     font=("Grobold", 16 * -1)
 )
 

@@ -26,7 +26,7 @@ window.configure(bg = "#FFFFFF")
 
 canvas = Canvas(
     window,
-    bg = "#FFFFFF",
+    bg = "#252525",
     height = 800,
     width = 360,
     bd = 0,
@@ -57,17 +57,9 @@ canvas.create_text(
     193.0,
     anchor="nw",
     text="Yuk  masuk  ke  halaman  penjelasan  !",
-    fill="#252525",
+    fill="#FFFFFF",
     font=("Grobold", 16 * -1)
 )
-
-canvas.create_rectangle(
-    68.0,
-    226.0,
-    292.0,
-    429.0,
-    fill="#FFFFFF",
-    outline="")
 
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
@@ -80,7 +72,7 @@ button_1 = Button(
 )
 button_1.place(
     x=95.0,
-    y=482.0,
+    y=300.0,
     width=169.0,
     height=46.0
 )
